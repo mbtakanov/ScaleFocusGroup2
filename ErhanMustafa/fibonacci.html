@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci</title>
+</head>
+<body>
+<script>
+	
+	var arrf = [0,1];
+	var i = 0;
+	var sum = 0;
+
+		while (arrf[0] + arrf[1] < 4000000){
+	    i = arrf[0] + arrf[1];
+	    arrf[0] = arrf[1];
+	    arrf[1] = i;
+
+	        if (i % 2 === 0){
+	        sum += i;
+    	}
+	}
+	console.log(sum);
+
+</script>
+
+</body>
+</html>
